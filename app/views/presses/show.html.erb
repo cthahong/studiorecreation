@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Publication name:</b>
+  <%= @press.publication_name %>
+</p>
+
+<p>
+  <b>Publication url:</b>
+  <%= @press.publication_url %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @press.url %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @press.date %>
+</p>
+
+<p>
+  <b>Start page:</b>
+  <%= @press.start_page %>
+</p>
+
+<p>
+  <b>End page:</b>
+  <%= @press.end_page %>
+</p>
+
+<p>
+  <b>Quote:</b>
+  <%= @press.quote %>
+</p>
+
+
+<%= link_to 'Edit', edit_press_path(@press) %> |
+<%= link_to 'Back', presses_path %>

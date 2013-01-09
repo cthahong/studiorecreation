@@ -1,0 +1,35 @@
+<h1>Listing presses</h1>
+
+<table>
+  <tr>
+    <th>Publication name</th>
+    <th>Publication url</th>
+    <th>Url</th>
+    <th>Date</th>
+    <th>Start page</th>
+    <th>End page</th>
+    <th>Quote</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @presses.each do |press| %>
+  <tr>
+    <td><%= press.publication_name %></td>
+    <td><%= press.publication_url %></td>
+    <td><%= press.url %></td>
+    <td><%= press.date %></td>
+    <td><%= press.start_page %></td>
+    <td><%= press.end_page %></td>
+    <td><%= press.quote %></td>
+    <td><%= link_to 'Show', press %></td>
+    <td><%= link_to 'Edit', edit_press_path(press) %></td>
+    <td><%= link_to 'Destroy', press, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Press', new_press_path %>

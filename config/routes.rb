@@ -1,4 +1,18 @@
 StudioRecreation::Application.routes.draw do
+  resources :presses
+
+  resources :pictures
+
+  resources :blogs
+
+  resources :addresses
+
+  resources :rooms
+
+  resources :clients
+
+  resources :projects
+
   get "welcome/index"
 
   # The priority is based upon order of creation:
