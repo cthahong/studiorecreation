@@ -10,6 +10,11 @@
   <%= @client.url %>
 </p>
 
+<ul>
+  <% for project in @clients.projects %>
+  <li><%= h project.name %></li>
+  <% end %>
+</ul>
 
 <%= link_to 'Edit', edit_client_path(@client) %> |
 <%= link_to 'Back', clients_path %>

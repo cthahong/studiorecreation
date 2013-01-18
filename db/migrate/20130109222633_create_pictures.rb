@@ -4,7 +4,8 @@ class CreatePictures < ActiveRecord::Migration
       t.string :name
       t.string :caption
       t.text :description
-
+      t.integer :imageable_id
+      t.string  :imageable_type
       t.timestamps
     end
   end
